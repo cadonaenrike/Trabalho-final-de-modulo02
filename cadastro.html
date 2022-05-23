@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles-login-cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <section class="primeira-coluna">
+            <div>
+                <img src="https://images.unsplash.com/photo-1626100571966-cccd86a43f62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80" alt="carro">
+            </div>
+        </section>
+        <section class="segunda-coluna">
+           <div class="central card">
+               <div class="card2">
+                    <form class="login " id="formulario-cadastro">
+                        <h2>
+                            Criar Conta
+                        </h2>
+                        <h4>
+                            Siga as intruções abaixo:
+                        </h4>
+                        <label for="input-email" id="label-input-email">E-mail:</label>
+                        <input type="email" placeholder="E-mail" class="cadastro" id="input-email">
+                        <label for="input-senha" id="label-input-senha">Senha:</label>
+                        <input type="password" placeholder="Senha" class="cadastro" id="input-senha">
+                        <label for="input-confirma-senha" id="label-input-confirm-senha">Confirme a senha:</label>
+                        <input type="password" placeholder="Confirme sua Senha" class="cadastro" id="input-confirma-senha">
+                    </form>
+                    <input type="button" class="btn-cadastro colorido" value="Criar Conta" id="btn-cadastrar">
+                    <button class="cta">
+                        <a href="login.html"> <span class="hover-underline-animation">Ja tem conta? clique aqui</span></a>
+                         <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                           <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                         </svg>
+               </div>
+           </div>
+        </section>
+    </main> 
+    <script src="./js/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.primeira-coluna{
+    width: 60vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.primeira-coluna img{
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+
+.segunda-coluna {
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    background-image: url(https://thumbs.dreamstime.com/b/pista-curvada-de-pneus-no-asfalto-com-espa%C3%A7o-c%C3%B3pia-163688112.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 550px;
+    height: 600px;
+    background-image: linear-gradient(163deg, #fa0000 0%, #000000 100%);
+    border-radius: 15%;
+    transition: all .3s;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   }
+   
+.card2 {
+    width: 550px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: all .2s;
+   }
+   
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 15px;
+   }
+   
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgb(255, 3, 3);
+    border-radius: 15px;
+   }
+   
+.login{
+    text-align:center;
+}
+
+.login span {
+    color: rgb(255, 251, 251);
+}
+.login label{
+    color: #000000;
+    align-items: initial;
+    margin: 46px;
+    
+}
+
+.login input {
+    padding-left: 15px;
+    color: #000;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    margin: 15px;
+    border: 3px solid #c7c7c7bb;
+    margin-bottom: 25px;
+    border-radius: 0px 100px 1500px 20px;
+}
+
+.login ::placeholder{
+    text-align: initial;
+    padding-left: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.cta {
+    padding-top: 25px;
+    border: none;
+    background: none;
+   }
+   
+   .cta span  {
+    margin-top: 25px;
+    margin-right: 15px;
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-family: -apple-system;
+    font-size: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+   }
+   .cta a{
+       text-decoration: none;
+   }
+   .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active svg {
+    transform: scale(0.9);
+   }
+   
+   .hover-underline-animation {
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding-bottom: 1px;
+   }
+   
+   .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 1px;
+    background-color: #ff0707;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   }
+   
+   .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   }
+   .colorido {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #ff0000);
+    background-image: -moz-linear-gradient(top, #000000, #ff0000);
+    background-image: -ms-linear-gradient(top, #000000, #ff0000);
+    background-image: -o-linear-gradient(top, #000000, #ff0000);
+    background-image: linear-gradient(to bottom, #000000, #ff0000);
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .colorido:hover {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #002bff);
+    background-image: -moz-linear-gradient(top, #000000, #002bff);
+    background-image: -ms-linear-gradient(top, #000000, #002bff);
+    background-image: -o-linear-gradient(top, #000000, #002bff);
+    background-image: linear-gradient(to bottom, #000000, #002bff);
+    text-decoration: none;
+  }
+
+.login h2 {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-family:-apple-system;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.login h4 {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    font-family:-apple-system;
+    text-align: center;
+    margin-bottom: 25px;
+}

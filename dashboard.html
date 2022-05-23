@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Home</title>
+</head>
+<body>
+   <div class="card">
+        <h1>Sistema de Registro de Serviços</h1>
+    
+        <div class="registro">
+            <form id="infos-prod">
+              <label for="name">Descrição de serviço </label>
+              <input type="text" id="nome" name="nome" placeholder="Troca de velas" />
+          
+              <label for="preco">Placa do Veiculo</label>
+              <input type="text" id="preco" name="preco" placeholder="ISH-0818" />
+              <label for="prime">Seguradora?</label>
+              <input type="checkbox" name="prime" id="prime">
+              <input type="hidden" name="idx" id="idx" value="novo" />
+              <button type="submit" class="btnsalvar" value="Salvar" >Salvar</button>
+            </form>            
+            <div id="msg-erro"></div>
+        </div>
+          <table>
+        
+            <caption>
+              <h1>Lista de Serviços</h1>
+            </caption>
+        
+            <thead>
+              <tr>
+                <th>Ordem</th>
+                <th>Descrição de Serviços</th>
+                <th>Final da Placa</th>
+                <th>Seguradora</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+        
+            <tbody id="tbody"></tbody>
+            
+          </table>
+        <div class="sair">
+            <input class="btnSair" type="button" onclick="saindo()" id="sair" value="Sair do Sistema" >
+        </div>
+
+   </div>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>
